@@ -1,13 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BG-Aeo</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colorlib.css">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+ 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
 </head>
 <body>
-    <h1>hello world</h1>
-    <h1>wewewew</h1>
+  <div id="header">
+    <!-- <nav class="navbar navbar-dark">
+      <a class="navbar-brand text-white" href="#"><img class="navlogo" src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      
+      </div>
+    </nav> -->
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+        <div class="img" style="background-image: url(images/bg_3.jpg);"></div>
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <h1 class="mb-4"><a href="index.html" class="logo"><img class="navlogo" src="img/logo.png" alt=""></a></h1>
+              <ul>
+                <li class="active"><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="colorlib-page">
+      <header>
+      	<div class="container">
+	        <div class="colorlib-navbar-brand">
+	          <a class="colorlib-logo" href="index.html"><img class="navlogo" src="img/logo.png" alt=""></a>
+	        </div>
+          
+	        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        </div>
+      </header>
+
+  </div>
+
+  <div id="footer">
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/">Eufer</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+   
+
+  </div>
+
+  
+
+
+<div id="fullpage" >
+    <div class="section "  id="section0">
+      <video id="myVideo" loop muted data-autoplay>
+        <source src="video/videoplayback1.mp4" type="video/mp4">
+      </video>
+      <div class="layer">
+        <img class="" src="img/logo.png" alt="">
+        <h1 class="text-white">Freedom to Choose</h1>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+      <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+    </div>
+      <div class="section"  id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+      <div class="section"  id="section3"><h1>thuis images <br />for a lovely page</h1></div>
+</div>
+
+
+
+
+
 </body>
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+    });
+
+</script>
+<script>
+
+  
+
+
+</script>
 </html>
