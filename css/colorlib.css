@@ -74,6 +74,12 @@ body {
 .scroller section {
   scroll-snap-align: start;
 }
+/* for arrow up */
+.arrowsection{
+  font-size:40px !important;
+  color:#fff;
+}
+
 
 	/* Style for our header texts
 	* --------------------------------------- */

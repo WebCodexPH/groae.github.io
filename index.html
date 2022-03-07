@@ -14,6 +14,9 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
+  <style>
+    
+  </style>
 	
 </head>
 <body>
@@ -56,7 +59,13 @@
 <!--footer start-->
   <div id="footer">
     <footer class="page-footer font-small blue">
+      <div class="container-fluid">
+        <div id="actions">
+          <a id="moveSectionDown" style="float:left" href="#"><i class="fa fa-angle-down arrowsection" aria-hidden="true"></i> </a>
+          <a id="moveSectionUp" style="float:right"  href="#"><i class="fa fa-angle-up arrowsection"  aria-hidden="true"></i></a>
+      </div>
 
+      </div>
       <!-- Copyright -->
       <div class="footer-copyright text-center">© 2020 Copyright:
         <a href="https://mdbootstrap.com/">Eufer</a>
@@ -99,16 +108,31 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script type="text/javascript">
-
-    var myFullpage = new fullpage('#fullpage', {
+$(document).ready(function(){
+  var myFullpage = new fullpage('#fullpage', {
         verticalCentered: true,
+        navigation: true,
+        slidesNavigation: true,
         sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
     });
+
+    // calling fullpage.js methods using jQuery
+$('#moveSectionUp').click(function(e){
+        e.preventDefault();
+        myFullpage.moveSectionUp();
+    });
+
+    $('#moveSectionDown').click(function(e){
+        e.preventDefault();
+        myFullpage.moveSectionDown();
+    });
+});
+
+
 
 </script>
 <script>
 
-  
 
 
 </script>
